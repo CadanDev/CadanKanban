@@ -106,7 +106,7 @@ const Home = (props, ref) => {
 
             return data;
         }
-        const csvUrl = '';
+        const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQY-kK7_YdJMFQ7BvHodgyjiyOOORXhw6_UpohSH_oJ3Qjqo1B1jLyIO_qfjSDVhe_6fHdmP7ljSiF2/pub?gid=0&single=true&output=csv';
         await axios.get(csvUrl).then(async ({ data }) => {
             const csv = parseCsv(data);
             console.log(csv);
